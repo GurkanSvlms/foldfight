@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gurkansvlms.github.io/foldfight/sitemap.xml
