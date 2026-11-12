@@ -107,3 +107,12 @@ footer a { color: var(--soft); }
   .hero-shot { width: min(300px, 80%); }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Language menu */
+.langs { position: relative; background: none; border: 0; padding: 0; margin: 0; }
+.langs summary { list-style: none; }
+.langs summary::-webkit-details-marker { display: none; }
+.langs nav { position: absolute; inset-inline-end: 0; top: 48px; z-index: 5; display: grid; min-width: 200px; padding: 8px; border-radius: 18px; background: var(--raised); border: 1px solid var(--line); box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5); }
+.langs nav a { color: var(--text); text-decoration: none; padding: 8px 12px; border-radius: 10px; font-weight: 800; }
+.langs nav a:hover, .langs nav a[aria-current] { background: rgba(212, 248, 74, 0.14); color: var(--lime); }
+[dir="rtl"] .doc ul { padding-inline-start: 20px; }
