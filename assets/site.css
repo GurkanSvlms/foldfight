@@ -23,7 +23,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 a { color: var(--lime); }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 
 .wrap { width: min(1120px, 100% - 32px); margin: 0 auto; }
 
@@ -77,8 +77,9 @@ h2 em { font-style: normal; color: var(--lime); }
 .tag { display: inline-block; margin-bottom: 10px; padding: 4px 12px; border-radius: 999px; font-size: 12px; font-weight: 900; letter-spacing: 0.6px; background: rgba(0, 0, 0, 0.28); }
 .tag.free { background: #FFB020; color: #2A0D02; }
 
-.strip { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(200px, 240px); gap: 16px; overflow-x: auto; padding-bottom: 12px; scroll-snap-type: x mandatory; }
-.strip img { border-radius: 18px; scroll-snap-align: start; }
+.strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.strip img { width: 100%; border-radius: 18px; box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45); }
+@media (max-width: 820px) { .strip { grid-template-columns: repeat(2, 1fr); gap: 12px; } }
 
 .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
 .card { background: var(--surface); border: 1px solid var(--line); border-radius: 22px; padding: 22px; }

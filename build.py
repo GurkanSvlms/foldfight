@@ -68,7 +68,7 @@ def page(code, path, title, desc, body, prefix):
 <meta name="theme-color" content="#0B0B12">
 <link rel="icon" href="{prefix}assets/favicon.png">
 <link rel="apple-touch-icon" href="{prefix}assets/apple-touch-icon.png">
-<link rel="stylesheet" href="{prefix}assets/site.css">
+<link rel="stylesheet" href="{prefix}assets/site.css?v=2">
 <script type="application/ld+json">{ld}</script>
 </head>
 <body>
